@@ -1,16 +1,15 @@
-#include<stdio.h>
-
 int main() {
     int ch,s1,l,b;
     begin: 
-    printf("***************************************************************************");
-    printf("\nsquare         : 1");
-    printf("\nrectangle      : 2");
-    printf("\nexit           : 3\n");
-    printf("\n***************************************************************************\n");
+    printf("*************************************");
+    printf("\nsquare              : 1");
+    printf("\nrectangle           : 2");
+    printf("\nequlateral triangle : 3");
+    printf("\nexit                : 4\n");
+    printf("\n***********************************\n");
     printf("\n enter your choice");
     scanf("%d", &ch);
-    printf("\n***************************************************************************\n");
+    printf("\n***********************************************************\n");
     
     switch(ch)
     {
@@ -30,13 +29,22 @@ int main() {
                 printf("\n perimeter = %d \n",2*(l+b));
                break;
         case 3: 
+                printf("\nEnter the side of the equilateral triangle :");
+                scanf("%d",&s1);
+                printf("\n area = %f",(1.732/4)*s1*s1);
+                printf("\n primeter = %d \n",3*s1);
                 break;
+                
+        case 4:
+                break;
+                
         default:
                printf("\n please enter values 1 & 2");
     } 
-    if (ch !=3)
+    if (ch !=4)
         goto begin;
         
     
     return 0;
 }
+
