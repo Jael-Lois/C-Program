@@ -1,99 +1,150 @@
 #include<stdio.h>
+
 int main()
+    
 {
-    int ch,s1,s2,s3,s4,d,h;
-    float d1;
-    begin:
-    printf("\n*************************************");
-    printf("\nSquare              : 1");
-    printf("\nRectangle           : 2");
-    printf("\nEqulateral triangle : 3");
-    printf("\nQuadrilateral       : 4");
-    printf("\nParallelogram       : 5");
-    printf("\nTrapezium           : 6");
-    printf("\nRhombus            : 7");
-    printf("\nExit                : 8\n");
-    printf("\n***********************************\n");
-    printf("\n Enter your choice");
-    scanf("%d", &ch);
-    printf("\n***********************************************************\n");
-
+    
+    float velocity,speed,distance,displacement,time;
+    
+    int ch;
+    
+    Begin:
+    
+    printf("\n\n\n\n***********************************************\n");
+    
+    printf("To find velocity         : 1\n");
+    
+    printf("To find displacement     : 2\n");
+    
+    printf("To find time (velocity)  : 3\n");
+    
+    printf("To find speed            : 4\n");
+    
+    printf("To find distance         : 5\n");
+    
+    printf("To find time (speed)     : 6\n");
+    
+    printf("Exit                     : 7\n");
+    
+    printf("***********************************************\n");
+    
+    printf("\n\nEnter your problem number : ");
+    
+    scanf("%d",&ch);
+    
     switch(ch)
+        
     {
-        case 1:
-                printf("Enter the side of the square :");
-                scanf("%d",&s1);
-                printf("\n Area = %d",s1*s1);
-                printf("\n Perimeter = %d \n", 4*s1);
-                break;
-        case 2:
-                printf("\n Enter the length and bredth of a rectangle :");
-                scanf("%d",&s1);
-                scanf("%d",&s2);
-                printf("\n Area = %d ",s1*s2);
-                printf("\n Perimeter = %d \n",2*(s1+s2));
-               break;
-        case 3:
-                printf("\nEnter the side of the equilateral triangle :");
-                scanf("%d",&s1);
-                printf("\n Area = %f",(1.732/4)*s1*s1);
-                printf("\n Primeter = %d \n",3*s1);
-                break;
-
-        case 4:
-                printf("Enter the sides of the quadrilateral : \n");
-                printf("Enter the diagonal of the quadrilateral : \n");
-                scanf("%d",&s1);
-                scanf("%d",&s2);
-                scanf("%d",&s3);
-                scanf("%d",&s4);
-                scanf("%d",&d);
-                printf("\n Area = %f \n",1/2.0*d*s1*s2);
-                printf("\n Primeter = %d \n",s1+s2+s3+s4);
-                break;
-
-        case 5:
-                printf("Enter the base of the parallelogram : \n");
-                printf("Enter the height of the parallelogram : \n");
-                scanf("%d",&s1);
-                scanf("%d",&s2);
-                printf("\nArea = %d \n",s1*s2);
-                printf("\nPerimeter = %d \n",2*(s1+s2));
-                break;
-
-
-        case 6:
-                printf("Enter the height of the trapezium : \n");
-                scanf("%d",&h);
-                printf("Enter the 2 parallel sides of the trapezium : \n");
-                scanf("%d",&s1);
-                scanf("%d",&s2);
-                printf("enter the other other sides of the trapezium : \n");
-                scanf("%d",&s3);
-                scanf("%d",&s4);
-                printf("\n Area = %f",1/2.0*h*(s2+s3));
-                printf("\n Perimeter = %d",s1+s2+s3+s4);
-                break;
-
-        case 7:
-                printf("Enter the diagonals for the rhombus : \n");
-                printf("Enter the side of the rhombus : \n");
-                scanf("%d %f",&d,&d1);
-                scanf("%d",&s1);
-                printf("\n Area = %f",1/2.0*d*d1);
-                printf("\n Perimeter = %d",4*s1);
-                break;
-        case 8:
-                break;
-
-
-
-        default:
-               printf("\n please enter values 1 & 8 \n");
-    }
-    if (ch !=8)
-        goto begin;
-
-
+            
+      case 1:
+            
+              printf("\nEnter the value for displacment : ");
+            
+              scanf("%f",&displacement);
+            
+              printf("\nEnter the value for time : ");
+            
+              scanf("%f",&time);
+            
+              velocity = displacement/time;
+            
+              printf("\n Velocity : %.4f",velocity);
+            
+              break;
+            
+      case 2:
+            
+              printf("\nEnter the value for velocity : ");
+            
+              scanf("%f",&velocity);
+            
+              printf("\nEnter the value for time : ");
+            
+              scanf("%f",&time);
+            
+              displacement = velocity*time;
+            
+              printf("\n Displacement : %.4f",&displacement);
+            
+              break;
+            
+      case 3:
+            
+              printf("\nEnter the value for displacment : ");
+            
+              scanf("%f",&displacement);
+            
+              printf("\nEnter the value for velocity : ");
+            
+              scanf("%f",&velocity);
+            
+              time = displacement/velocity;
+            
+              printf("\n Time : %.4f",time);
+            
+              break;
+            
+      case 4:
+            
+              printf("\nEnter the value for distance : ");
+            
+              scanf("%f",&distance);
+            
+              printf("\nEnter the value for time : ");
+            
+              scanf("%f",&time);
+            
+              speed = distance /time;
+            
+              printf("\n Speed : %.4f",speed);
+            
+              break;
+      case 5:
+            
+              printf("\nEnter the value for speed : ");
+            
+              scanf("%f",&speed);
+            
+              printf("\nEnter the value for time : ");
+            
+              scanf("%f",&time);
+            
+              distance = speed*time;
+            
+              printf("\n Distance : %.4f",distance);
+            
+              break;
+            
+      case 6:
+            
+              printf("\nEnter the value for distance : ");
+            
+              scanf("%f",&distance);
+            
+              printf("\nEnter the value for speed : ");
+            
+              scanf("%f",&speed);
+            
+              time = distance/speed;
+            
+              printf("\n Time : %.4f",time);
+            
+              break;
+            
+      case 7:
+            
+              break;
+            
+      default:
+            
+              printf("Enter the number between 1 to 7");
+            
+}
+    
+    if (ch !=7)
+        
+    goto Begin;
+    
     return 0;
+    
 }
