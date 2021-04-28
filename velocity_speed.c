@@ -34,6 +34,22 @@ int main()
               displacment = velocity*time;
               printf("\n Displacement : %f",&displacment);
               break;
+      case 3:
+              printf("\nEnter the value for displacment : ");
+              scanf("%f",&displacment);
+              printf("\nEnter the value for velocity : ");
+              scanf("%f",&velocity);
+              time = displacment/velocity;
+              printf("\n Time : %.4f",time);
+              break;
+      case 4:
+              printf("\nEnter the value for distance : ");
+              scanf("%f",&distance);
+              printf("\nEnter the value for time : ");
+              scanf("%f",&time);
+              speed = distance /time;
+              printf("\n Speed : %.4f",speed);
+              break;
       
     }
     return 0;
