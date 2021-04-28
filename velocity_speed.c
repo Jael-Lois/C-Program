@@ -3,56 +3,207 @@
 int main()
 {
     //v=dis/tim
+    
     //speed=dist/time
-    float velocity,speed,distance,displacement,time;
+    
+    //a=(v-u)/t
+    
+    float velocity,speed,distance,displacement,time,density,mass,volume;
+    
     int ch;
+    
+    Begin:
+    
+    printf("\n\n\n\n***********************************************\n");
+    
+    printf("To find velocity                    : 1\n");
+    
+    printf("To find displacement                : 2\n");
+    
+    printf("To find time (velocity)             : 3\n");
+    
+    printf("To find speed                       : 4\n");
+    
+    printf("To find distance                    : 5\n");
+    
+    printf("To find time (speed)                : 6\n");
+    
+    printf("To find density                     : 7\n");
+    
+    printf("To find mass                        : 8\n");
+    
+    printf("To find volume                      : 9\n");
+    
+    printf("Exit                                : 10\n");
+    
     printf("***********************************************\n");
-    printf("To find velocity         : 1\n");
-    printf("To find displacement     : 2\n");
-    printf("To find time (velocity)  : 3\n");
-    printf("To find speed            : 4\n");
-    printf("To find distance         : 5\n");
-    printf("To find time (speed)     : 6\n");
-    printf("***********************************************\n");
+    
     printf("\n\nEnter your problem number : ");
+    
     scanf("%d",&ch);
+    
     switch(ch)
+        
     {
+            
       case 1:
+            
               printf("\nEnter the value for displacment : ");
-              scanf("%f",&displacment);
+            
+              scanf("%f",&displacement);
+            
               printf("\nEnter the value for time : ");
+            
               scanf("%f",&time);
-              velocity = displacment/time;
-              printf("\n Velocity : %f",velocity);
+            
+              velocity = displacement/time;
+            
+              printf("\n Velocity : %.4f",velocity);
+            
               break;
+            
       case 2:
+            
               printf("\nEnter the value for velocity : ");
+            
               scanf("%f",&velocity);
+            
               printf("\nEnter the value for time : ");
+            
               scanf("%f",&time);
-              displacment = velocity*time;
-              printf("\n Displacement : %f",&displacment);
+            
+              displacement = velocity*time;
+            
+              printf("\n Displacement : %.4f",&displacement);
+            
               break;
+            
       case 3:
+            
               printf("\nEnter the value for displacment : ");
-              scanf("%f",&displacment);
+            
+              scanf("%f",&displacement);
+            
               printf("\nEnter the value for velocity : ");
+            
               scanf("%f",&velocity);
-              time = displacment/velocity;
+            
+              time = displacement/velocity;
+            
               printf("\n Time : %.4f",time);
+            
               break;
+            
       case 4:
+            
               printf("\nEnter the value for distance : ");
+            
               scanf("%f",&distance);
+            
               printf("\nEnter the value for time : ");
+            
               scanf("%f",&time);
+            
               speed = distance /time;
+            
               printf("\n Speed : %.4f",speed);
+            
               break;
-      
-    }
+            
+      case 5:
+            
+              printf("\nEnter the value for speed : ");
+            
+              scanf("%f",&speed);
+            
+              printf("\nEnter the value for time : ");
+            
+              scanf("%f",&time);
+            
+              distance = speed*time;
+            
+              printf("\n Distance : %.4f",distance);
+            
+              break;
+            
+      case 6:
+            
+              printf("\nEnter the value for distance : ");
+            
+              scanf("%f",&distance);
+            
+              printf("\nEnter the value for speed : ");
+            
+              scanf("%f",&speed);
+            
+              time = distance/speed;
+            
+              printf("\n Time : %.4f",time);
+            
+              break;
+            
+      case 7:
+            
+              printf("\nEnter the value for mass : ");
+            
+              scanf("%f",&mass);
+            
+              printf("\nEnter the value for volume : ");
+            
+              scanf("%f",&volume);
+            
+              density = mass/volume;
+            
+              printf("\n Density : %.4f",density);
+            
+              break;
+            
+      case 8:
+            
+              printf("\nEnter the value for density : ");
+            
+              scanf("%f",&density);
+            
+              printf("\nEnter the value for volume : ");
+            
+              scanf("%f",&volume);
+            
+              mass = density*volume;
+            
+              printf("\n Mass : %.4f",mass);
+            
+              break;
+            
+      case 9:
+            
+              printf("\nEnter the value for mass : ");
+            
+              scanf("%f",&mass);
+            
+              printf("\nEnter the value for density : ");
+            
+              scanf("%f",&density);
+            
+              volume = mass/density;
+            
+              printf("\n Volume : %.4f",volume);
+            
+              break;
+            
+      case 10:
+            
+              break;
+            
+      default:
+            
+              printf("Enter the number between 1 to 9");
+            
+}
+ 
+    if (ch !=10)
+        
+    goto Begin;
+    
     return 0;
     
 }
-
