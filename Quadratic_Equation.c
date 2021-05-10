@@ -8,7 +8,13 @@ int main()
 
   float a,b,c;
 
-  printf("Enter the value for a : ");
+  int ch;
+
+  Begin:
+
+  printf("\n****************************************************************************");
+
+  printf("\n\nEnter the value for a : ");
 
   scanf("%f",&a);
 
@@ -53,6 +59,24 @@ int main()
     printf("\nThe value of the root is %.2f",(-b - sqrt((b*b)-(4*a*c)))/(2*a));
 
   }
+
+  printf("\n****************************************************************************");
+
+  printf("\n****************************************************************************");
+
+  printf("\n\nYes : 1");
+
+  printf("\n\nNo  : 0");
+
+  printf("\n\nDo you want to do again : ");
+
+  scanf("%d",&ch);
+
+  printf("\n\n****************************************************************************");
+
+  if(ch==1)
+
+  goto Begin;
 
   return 0;
 
