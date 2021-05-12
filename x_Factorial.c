@@ -14,7 +14,7 @@ int main()
   ex = 1;
   for(i=1;i<=12;i++)
   {
-    fact = fact*i;
+    fact = fact*(x/i);
     power1 *= x;
     ex += (float)power1/fact;
     printf("%lf\n",power1);
