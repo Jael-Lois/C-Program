@@ -45,4 +45,24 @@ C uses the operator = (used in mathematics to express equality) to indicate assi
 The C operator precedence is not always intuitive. For example, the operator == binds more tightly than (is executed prior to) the operators & (bitwise AND) and | (bitwise OR) in expressions such as x & 1 == 0, which must be written as (x & 1) == 0 if that is the coder's intent.
 
 
+The C Programming Language[1] (often referred to as K&R), the seminal book on C
+Paradigm	Multi-paradigm: imperative (procedural), structured
+
+*****************************************************************************************************************************************************
+
+### Designed :
+           Dennis Ritchie
+           
+### Developer :
+           Dennis Ritchie & Bell Labs (creators); ANSI X3J11 (ANSI C); ISO/IEC JTC1/SC22/WG14 (ISO C)
+           
+### First appeared :
+                 1972; 49 years ago[2]
+                 
+### Filename extensions :
+                     .c, .h
+
+
+*****************************************************************************************************************************************************
+
 <img src = "https://github.com/Jael-Lois/C-Program/blob/main/c-course.jpg">
