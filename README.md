@@ -51,16 +51,16 @@ Paradigm	Multi-paradigm: imperative (procedural), structured
 *****************************************************************************************************************************************************
 
 ### Designed :
-           Dennis Ritchie
+                      Dennis Ritchie
            
 ### Developer :
-           Dennis Ritchie & Bell Labs (creators); ANSI X3J11 (ANSI C); ISO/IEC JTC1/SC22/WG14 (ISO C)
+                      Dennis Ritchie & Bell Labs (creators); ANSI X3J11 (ANSI C); ISO/IEC JTC1/SC22/WG14 (ISO C)
            
 ### First appeared :
-                 1972; 49 years ago[2]
+                       1972
                  
 ### Filename extensions :
-                     .c, .h
+                       .c, .h
 
 
 *****************************************************************************************************************************************************
