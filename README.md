@@ -54,7 +54,7 @@ Paradigm	Multi-paradigm: imperative (procedural), structured
                       Dennis Ritchie
            
 ### Developer :
-                      Dennis Ritchie & Bell Labs (creators); ANSI X3J11 (ANSI C); ISO/IEC JTC1/SC22/WG14 (ISO C)
+                      Dennis Ritchie & Bell Labs (creators)
            
 ### First appeared :
                        1972
