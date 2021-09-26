@@ -48,8 +48,7 @@ The C operator precedence is not always intuitive. For example, the operator == 
 The C Programming Language[1] (often referred to as K&R), the seminal book on C
 Paradigm	Multi-paradigm: imperative (procedural), structured
 
-*****************************************************************************************************************************************************
-
+# ******************************************************************************************************************************************
 ### Designed :
                       Dennis Ritchie
            
@@ -61,8 +60,22 @@ Paradigm	Multi-paradigm: imperative (procedural), structured
                  
 ### Filename extensions :
                        .c, .h
+## Facts of C programming :
+                       C was invented to write an operating system called UNIX.
+
+                       C is a successor of B language which was introduced around the early 1970s.
+
+                       The language was formalized in 1988 by the American National Standard Institute (ANSI).
+
+                       The UNIX OS was totally written in C.
+
+                       Today C is the most widely used and popular System Programming Language.
+
+                       Most of the state-of-the-art software have been implemented using C.
 
 
-*****************************************************************************************************************************************************
+# ******************************************************************************************************************************************
 
 <img src = "https://github.com/Jael-Lois/C-Program/blob/main/c-course.jpg">
+
+# ******************************************************************************************************************************************
