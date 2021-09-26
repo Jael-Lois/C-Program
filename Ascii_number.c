@@ -5,8 +5,6 @@ int main()
 {
 
   char a;
-  
-  begin:
 
   Begin:
 
@@ -20,8 +18,6 @@ int main()
   {
 
     printf("\nThe ascii value of %c is %d\n\nThank you for playing with us\n",a,a);
-
-    goto begin;
 
   }
   else
