@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<ctype.h>
+#include<unistd.h>
+int main()
+
+{
+  char name[100];
+
+
+  printf("\nEnter you first name: ");
+  scanf("%[^\n]s",name);
+
+  int vowel,l,i;
+
+  vowel = 0;
+
+  l = strlen(name);
+
+  for(i=0;i<l;i++)
+  {
+    switch (tolower(name[i]))
+      {
+
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+       vowel++;
+     }
+   
+  /*if(name[i]=='a')
+    vowel = vowel+1;
+  else if(name[i]=='e')
+    vowel = vowel+1;
+  else if(name[i]=='i')
+    vowel = vowel+1;
+  else if(name[i]=='o')
+    vowel = vowel+1;
+  else if(name[i]=='u')
+    vowel = vowel+1;
+  else if(name[i]=='A')
+    vowel = vowel+1;
+  else if(name[i]=='E')
+    vowel = vowel+1;
+  else if(name[i]=='I')
+    vowel = vowel+1;
+  else if(name[i]=='O')
+    vowel = vowel+1;
+  else if(name[i]=='U')
+    vowel = vowel+1;*/
+  }
+
+  printf("\nThe number of vowels in the name are %d",vowel);
+
+  return 0;
+}
