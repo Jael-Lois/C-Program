@@ -1,8 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<string.h>
 #include<ctype.h>
-#include<unistd.h>
 int main()
 
 {
@@ -31,28 +29,7 @@ int main()
        vowel++;
      }
    
-  /*if(name[i]=='a')
-    vowel = vowel+1;
-  else if(name[i]=='e')
-    vowel = vowel+1;
-  else if(name[i]=='i')
-    vowel = vowel+1;
-  else if(name[i]=='o')
-    vowel = vowel+1;
-  else if(name[i]=='u')
-    vowel = vowel+1;
-  else if(name[i]=='A')
-    vowel = vowel+1;
-  else if(name[i]=='E')
-    vowel = vowel+1;
-  else if(name[i]=='I')
-    vowel = vowel+1;
-  else if(name[i]=='O')
-    vowel = vowel+1;
-  else if(name[i]=='U')
-    vowel = vowel+1;*/
   }
-
   printf("\nThe number of vowels in the name are %d",vowel);
 
   return 0;
