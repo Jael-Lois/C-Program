@@ -10,13 +10,13 @@ int Sumofasciivalue(char *a)
   l = strlen(a);
 
   for(i=0;i<l;i++)
-    sum+=a[i];
+    sum+=*(a+i);
 
   return sum;
 }
 int main()
 {
-  int sum=0;
+  int sum;
 
   char name[20];
 
